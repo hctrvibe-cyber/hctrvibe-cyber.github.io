@@ -182,3 +182,52 @@ html, body {
   font-family: 'JetBrains Mono', monospace;
   border: 1px solid #38bdf8;
 }
+
+/* --- Navigation & Smooth Scroll --- */
+html {
+  scroll-behavior: smooth;
+}
+
+.top-nav {
+  background-color: #0f172a;
+  border-bottom: 1px solid #334155;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 15px 20px;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  color: #38bdf8;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f59e0b; /* Turns CU Boulder Gold on hover */
+}
